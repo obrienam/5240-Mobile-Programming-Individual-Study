@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet var labelResult: UILabel!
     @IBOutlet var text_Message: UITextField!
     @IBAction func changeButton(_ sender: UIButton) {
+        labelResult.text=text_Message.text?.uppercased()
     }
     
     override func viewDidLoad() {
