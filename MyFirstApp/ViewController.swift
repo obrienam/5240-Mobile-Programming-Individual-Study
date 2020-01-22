@@ -10,13 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet var labelResult: UILabel!
-    @IBOutlet var text_Message: UITextField!
-    @IBAction func changeButton(_ sender: UIButton) {
-        labelResult.text=text_Message.text?.uppercased()
-    }
+    @IBOutlet var text_Display: UITextField!
     
+    @IBAction func changeButton(_ sender: UIButton) {
+        labelResult.text=text_Display.text
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
+
         // Do any additional setup after loading the view.
     }
 
