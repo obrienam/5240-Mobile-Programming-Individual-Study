@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet var text_Display: UITextField!
     
     @IBAction func changeButton(_ sender: UIButton) {
-        labelResult.text=text_Display.text
+        labelResult.text=text_Display.text?.capitalized
     }
     override func viewDidLoad() {
         super.viewDidLoad()
