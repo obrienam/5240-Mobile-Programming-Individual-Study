@@ -11,14 +11,18 @@ import UIKit
 class ViewController: UIViewController {
 
     
+    
+    @IBOutlet var label: UILabel!
     @IBOutlet var textField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    @IBAction func enterBttn(_ sender: Any) {
-        textField.text=textField.text?.capitalized
+    @IBAction func cap(_ sender: Any) {
+        label.text=textField.text?.capitalized
     }
+    
+    
     
 
 }
