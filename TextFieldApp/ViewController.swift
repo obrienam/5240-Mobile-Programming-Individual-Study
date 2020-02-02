@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector:
             #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         //Adds gesture recognizer for when user taps outside of text field.
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard)) view.addGestureRecognizer(tap)
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard)); view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
         
     }
@@ -36,5 +36,12 @@ class ViewController: UIViewController {
         
         }
     }
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if ((notification.userInfo? [UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue)
+            != nil {
+                if self.view.frame.origin.y != 0 { self.view.frame.origin.y = 0
+                }
+            }
+        }
 }
 
