@@ -19,7 +19,7 @@
                                 <rect key="frame" x="87" y="183" width="240" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="h9K-fZ-Ail"/>
+                                    <constraint firstAttribute="height" constant="128" id="ADK-uf-3wW"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -33,14 +33,28 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9q9-RU-AsY"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zSm-mg-Xng">
+                                <rect key="frame" x="87" y="571" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="evS-3G-nFz"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="NR1-M1-G93" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OG9-e9-ZRX"/>
-                            <constraint firstItem="NR1-M1-G93" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="TwJ-CH-16c"/>
-                            <constraint firstItem="NR1-M1-G93" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="139" id="lVr-IY-ij2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bdd-3Q-vCb" secondAttribute="bottom" constant="415" id="oan-4Z-0EG"/>
-                            <constraint firstItem="NR1-M1-G93" firstAttribute="centerX" secondItem="Bdd-3Q-vCb" secondAttribute="centerX" id="xrR-71-zen"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zSm-mg-Xng" secondAttribute="bottom" constant="163" id="4Nt-3L-W8l"/>
+                            <constraint firstItem="NR1-M1-G93" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="79q-hA-7zn"/>
+                            <constraint firstItem="Bdd-3Q-vCb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="417" id="JMs-xq-hVy"/>
+                            <constraint firstItem="NR1-M1-G93" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MgJ-8x-d5b"/>
+                            <constraint firstItem="NR1-M1-G93" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="139" id="Ro6-cJ-ztf"/>
+                            <constraint firstItem="NR1-M1-G93" firstAttribute="leading" secondItem="zSm-mg-Xng" secondAttribute="leading" id="jAX-4f-E6T"/>
+                            <constraint firstItem="NR1-M1-G93" firstAttribute="centerX" secondItem="Bdd-3Q-vCb" secondAttribute="centerX" id="jxJ-nE-Eyd"/>
+                            <constraint firstItem="NR1-M1-G93" firstAttribute="trailing" secondItem="zSm-mg-Xng" secondAttribute="trailing" id="ptV-Fc-xaG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
