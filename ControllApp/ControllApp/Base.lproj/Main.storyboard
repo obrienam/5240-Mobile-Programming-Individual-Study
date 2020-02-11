@@ -24,21 +24,51 @@
                                     <action selector="touchInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rxk-1l-qGa"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WB4-yZ-bkM">
+                                <rect key="frame" x="197" y="195" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kVx-ir-Jt7">
+                                <rect key="frame" x="197" y="271" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="mK0-Yb-GIW"/>
+                                </connections>
+                            </switch>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dwh-5T-lAY">
+                                <rect key="frame" x="131" y="116" width="174" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="one"/>
+                                    <segment title="Two"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="5V4-bI-cOi"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="A7f-i9-Bws" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="303" id="G8N-Of-LgG"/>
-                            <constraint firstItem="A7f-i9-Bws" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="202" id="e9X-4b-FAa"/>
+                            <constraint firstItem="WB4-yZ-bkM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="197" id="0b5-9M-raO"/>
+                            <constraint firstItem="WB4-yZ-bkM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="151" id="1aj-D8-cXa"/>
+                            <constraint firstItem="kVx-ir-Jt7" firstAttribute="top" secondItem="WB4-yZ-bkM" secondAttribute="bottom" constant="55" id="8Lr-HJ-76x"/>
+                            <constraint firstItem="WB4-yZ-bkM" firstAttribute="trailing" secondItem="A7f-i9-Bws" secondAttribute="trailing" id="8MO-Wa-dfW"/>
+                            <constraint firstItem="WB4-yZ-bkM" firstAttribute="leading" secondItem="kVx-ir-Jt7" secondAttribute="leading" id="Unf-Jf-MsL"/>
+                            <constraint firstItem="A7f-i9-Bws" firstAttribute="top" secondItem="kVx-ir-Jt7" secondAttribute="bottom" constant="45" id="fyo-vh-8cT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="buttonObject" destination="A7f-i9-Bws" id="rAb-ry-GfF"/>
+                        <outlet property="labelSwitch" destination="WB4-yZ-bkM" id="6oL-gm-jEj"/>
+                        <outlet property="segmentedControl" destination="dwh-5T-lAY" id="0Df-wD-I9M"/>
+                        <outlet property="switchObject" destination="kVx-ir-Jt7" id="BgY-6X-L9Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="127"/>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
     </scenes>
 </document>
