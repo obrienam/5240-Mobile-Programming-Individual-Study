@@ -55,13 +55,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         alert.addAction(cancelAction)
         self.present(alert,animated: true, completion: nil)
     }
-    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        let addAction = UITableViewRowAction(style: UITableViewRowAction.Style.normal, title: "Add", handler: {(action: UITableViewRowAction, indexPath: IndexPath) in
-        self.displayAlert(location: indexPath.row) })
-        let deleteAction = UITableViewRowAction(style: UITableViewRowAction.Style.destructive, title: "Delete", handler: {(action: UITableViewRowAction, indexPath: IndexPath) in
-                self.petArray.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.fade)
-        })
-    return [deleteAction, addAction] }
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let addAction = UIContextualAction(style: .normal, title: "Add"){ (contextualAction,view,boolValue) in
+        self.displayAlert(location: indexPath.row) }
+        let deleteAction = UIContextualAction(style: .destructive, title: "Delete"){ (contextualAction,view,boolValue) in
+        
+        self.petArray.remove(at: indexPath.row)
+        tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.fade)
+        }
+        let swipeAction = UISwipeActionsConfiguration(actions: [addAction,deleteAction])
+                
+        
+    return swipeAction
 }
-
+}
