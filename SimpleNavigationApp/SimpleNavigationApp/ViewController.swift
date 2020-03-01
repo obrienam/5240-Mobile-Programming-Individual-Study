@@ -14,6 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.prompt="Prompt text"
         navigationItem.title = "Title text"
+        
+        navigationController?.navigationBar.tintColor = UIColor.red
         // Do any additional setup after loading the view.
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -23,7 +25,12 @@ class ViewController: UIViewController {
         let nextVC = segue.destination as! SecondViewController
         nextVC.navigationItem.title="New prompt here"
         nextVC.receivedString="Passed title here"
+        
+        let customButton = UIBarButtonItem()
+        customButton.title = "New back text"
+        navigationItem.backBarButtonItem = customButton
     }
+    
 
 }
 
