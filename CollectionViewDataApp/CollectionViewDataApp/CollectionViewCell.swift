@@ -10,4 +10,6 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     @IBOutlet var itemLabel:UILabel!
+    
+    
 }

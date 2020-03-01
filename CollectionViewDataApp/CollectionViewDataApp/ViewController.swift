@@ -20,6 +20,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         // Do any additional setup after loading the view.
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        performSegue(withIdentifier: "firstLink", sender: self)
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         petArray.count
     }

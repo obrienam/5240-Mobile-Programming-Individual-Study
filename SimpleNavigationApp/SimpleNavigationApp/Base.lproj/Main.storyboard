@@ -26,21 +26,37 @@
             </objects>
             <point key="canvasLocation" x="852.17391304347836" y="138.61607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="2Vb-oM-TPi">
             <objects>
-                <viewController id="Dnd-AI-Smv" sceneMemberID="viewController">
+                <viewController id="Dnd-AI-Smv" customClass="SecondViewController" customModule="SimpleNavigationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3rK-9k-Jpf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymg-LM-k6S">
+                                <rect key="frame" x="112" y="369" width="209" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ymg-LM-k6S" firstAttribute="top" secondItem="A7U-1J-2TB" secondAttribute="top" constant="281" id="Gdx-mA-1Mk"/>
+                            <constraint firstItem="A7U-1J-2TB" firstAttribute="trailing" secondItem="Ymg-LM-k6S" secondAttribute="trailing" constant="93" id="dY2-NF-Km2"/>
+                            <constraint firstItem="Ymg-LM-k6S" firstAttribute="leading" secondItem="A7U-1J-2TB" secondAttribute="leading" constant="112" id="ft5-5D-cbF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="A7U-1J-2TB"/>
                     </view>
                     <navigationItem key="navigationItem" id="emh-RZ-64i"/>
+                    <connections>
+                        <outlet property="labelDisplay" destination="Ymg-LM-k6S" id="naF-5h-xY3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eOl-bE-r8c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1520" y="138"/>
+            <point key="canvasLocation" x="1518.840579710145" y="137.94642857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jLQ-5P-vWJ">
