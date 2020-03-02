@@ -36,7 +36,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if (cell==nil) {
             cell=UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cellID")
         }
-    cell?.textLabel?.text=petArray[indexPath.section][indexPath.row + 1]
+        cell?.textLabel?.text=petArray[indexPath.section][indexPath.row + 1]
         return cell!
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
