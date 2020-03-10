@@ -49,6 +49,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let nextVC = segue.destination as! DetailViewController
         nextVC.navigationItem.title = "\(selectedItem) Details"
         nextVC.detailString="You selected a \(selectedItem) as your pet"
+        nextVC.animal="\(selectedItem)"
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
