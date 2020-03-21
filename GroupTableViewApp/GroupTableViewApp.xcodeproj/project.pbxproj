@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5064D662426A75F0063F001 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5064D652426A75F0063F001 /* MapViewController.swift */; };
 		B51F75C32402FEA2005B3DF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F75C22402FEA2005B3DF6 /* AppDelegate.swift */; };
 		B51F75C52402FEA2005B3DF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F75C42402FEA2005B3DF6 /* SceneDelegate.swift */; };
 		B51F75C72402FEA2005B3DF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F75C62402FEA2005B3DF6 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5064D652426A75F0063F001 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B51F75BF2402FEA2005B3DF6 /* GroupTableViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupTableViewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51F75C22402FEA2005B3DF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B51F75C42402FEA2005B3DF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				B51F75C42402FEA2005B3DF6 /* SceneDelegate.swift */,
 				B51F75C62402FEA2005B3DF6 /* ViewController.swift */,
 				B51F75C82402FEA2005B3DF6 /* Main.storyboard */,
+				B5064D652426A75F0063F001 /* MapViewController.swift */,
 				B5A88208240DA75E00703C82 /* DetailViewController.swift */,
 				B51F75CB2402FEA5005B3DF6 /* Assets.xcassets */,
 				B51F75CD2402FEA5005B3DF6 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				B51F75C72402FEA2005B3DF6 /* ViewController.swift in Sources */,
 				B51F75C32402FEA2005B3DF6 /* AppDelegate.swift in Sources */,
 				B51F75C52402FEA2005B3DF6 /* SceneDelegate.swift in Sources */,
+				B5064D662426A75F0063F001 /* MapViewController.swift in Sources */,
 				B5A88209240DA75E00703C82 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B63-8v-B7u">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B63-8v-B7u">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -77,7 +77,7 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="tY2-So-w36"/>
-                                    <barButtonItem title="Alert" id="lT5-rw-eVd">
+                                    <barButtonItem title="Location" id="lT5-rw-eVd">
                                         <connections>
                                             <action selector="showAlert:" destination="kLr-AP-sgr" id="dmw-gy-sfs"/>
                                         </connections>
@@ -138,28 +138,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="This view will sort animals alphabetically" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qC6-Gg-mWd">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="This view will sort animals alphabetically" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qC6-Gg-mWd">
                                 <rect key="frame" x="0.0" y="150" width="376" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qC6-Gg-mWd" firstAttribute="centerX" secondItem="B3S-MD-uqY" secondAttribute="centerX" id="2nf-RA-6yo"/>
+                            <constraint firstItem="qC6-Gg-mWd" firstAttribute="leading" secondItem="msV-FY-V7V" secondAttribute="leading" id="lWT-q0-tnw"/>
+                            <constraint firstItem="qC6-Gg-mWd" firstAttribute="top" secondItem="msV-FY-V7V" secondAttribute="top" constant="106" id="p1Z-bC-aCe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="msV-FY-V7V"/>
                     </view>
                     <navigationItem key="navigationItem" title="A-Z" id="9QD-Qz-CNp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="huw-Pw-76a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1792.8" y="927.88605697151434"/>
+            <point key="canvasLocation" x="3671.1999999999998" y="927.88605697151434"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3IQ-97-ubX">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="B63-8v-B7u" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="gvh-CG-H1J"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tmB-LM-oAP">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -168,11 +173,43 @@
                     <connections>
                         <segue destination="Gbq-0u-nAt" kind="relationship" relationship="viewControllers" id="DLg-cS-Fw1"/>
                         <segue destination="aOv-xf-Qca" kind="relationship" relationship="viewControllers" id="I0r-IU-JYk"/>
+                        <segue destination="fF3-JE-DQh" kind="relationship" relationship="viewControllers" id="L3m-uM-yaR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F5i-2x-n2p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.40000000000001" y="129.98500749625188"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="6BM-r4-myq">
+            <objects>
+                <viewController id="fF3-JE-DQh" customClass="MapViewController" customModule="GroupTableViewApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hDH-yS-Gl7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mKR-M3-u4Y">
+                                <rect key="frame" x="0.0" y="1" width="375" height="665"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mKR-M3-u4Y" firstAttribute="centerX" secondItem="hDH-yS-Gl7" secondAttribute="centerX" id="Kj7-2k-Kzs"/>
+                            <constraint firstItem="mKR-M3-u4Y" firstAttribute="top" secondItem="Mif-Nj-mGU" secondAttribute="top" constant="1" id="cv0-j6-pAD"/>
+                            <constraint firstItem="mKR-M3-u4Y" firstAttribute="centerY" secondItem="hDH-yS-Gl7" secondAttribute="centerY" id="lA9-cb-1TJ"/>
+                            <constraint firstItem="mKR-M3-u4Y" firstAttribute="leading" secondItem="Mif-Nj-mGU" secondAttribute="leading" id="z8V-ch-itz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mif-Nj-mGU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="r8z-Ja-V1T"/>
+                    <navigationItem key="navigationItem" id="jhN-CK-Ru0"/>
+                    <connections>
+                        <outlet property="mapView" destination="mKR-M3-u4Y" id="44k-Vf-Y6t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sl8-hK-ORW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549.60000000000002" y="899.10044977511257"/>
         </scene>
         <!--A-Z-->
         <scene sceneID="WQd-wS-IKd">
@@ -191,11 +228,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ful-BD-fwy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="853.60000000000002" y="927.88605697151434"/>
+            <point key="canvasLocation" x="2732" y="927.88605697151434"/>
         </scene>
     </scenes>
     <resources>
         <image name="First" width="25" height="25"/>
         <image name="Second" width="25" height="25"/>
+        <image name="map" catalog="system" width="64" height="56"/>
     </resources>
 </document>

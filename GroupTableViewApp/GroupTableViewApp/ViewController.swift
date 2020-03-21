@@ -7,10 +7,11 @@
 //
 
 import UIKit
-
+import MapKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     var pressed=false
     var selectedItem=""
+    var firstLocation=""
     var petArray = [["Mammal", "cat", "dog", "hamster", "gerbil", "rabbit"], ["Bird", "parakeet", "parrot", "canary", "finch"], ["Fish", "tropical fish", "goldfish", "sea horses"], ["Reptile", "turtle", "snake", "lizard"]]
     @IBOutlet var petTable: UITableView!
     @IBOutlet var eButton: UIBarButtonItem!
@@ -104,6 +105,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let swipeAction=UISwipeActionsConfiguration(actions:[deleteAction])
         return swipeAction
     }
-
+    
 }
 
