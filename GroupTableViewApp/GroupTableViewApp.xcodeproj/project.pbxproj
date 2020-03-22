@@ -15,6 +15,7 @@
 		B51F75CC2402FEA5005B3DF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51F75CB2402FEA5005B3DF6 /* Assets.xcassets */; };
 		B51F75CF2402FEA5005B3DF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51F75CD2402FEA5005B3DF6 /* LaunchScreen.storyboard */; };
 		B5A88209240DA75E00703C82 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A88208240DA75E00703C82 /* DetailViewController.swift */; };
+		B5D712022427DC4D0017E164 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D712012427DC4D0017E164 /* Artwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B51F75CE2402FEA5005B3DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B51F75D02402FEA5005B3DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5A88208240DA75E00703C82 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B5D712012427DC4D0017E164 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				B51F75C42402FEA2005B3DF6 /* SceneDelegate.swift */,
 				B51F75C62402FEA2005B3DF6 /* ViewController.swift */,
 				B51F75C82402FEA2005B3DF6 /* Main.storyboard */,
+				B5D712012427DC4D0017E164 /* Artwork.swift */,
 				B5064D652426A75F0063F001 /* MapViewController.swift */,
 				B5A88208240DA75E00703C82 /* DetailViewController.swift */,
 				B51F75CB2402FEA5005B3DF6 /* Assets.xcassets */,
@@ -148,6 +151,7 @@
 				B51F75C32402FEA2005B3DF6 /* AppDelegate.swift in Sources */,
 				B51F75C52402FEA2005B3DF6 /* SceneDelegate.swift in Sources */,
 				B5064D662426A75F0063F001 /* MapViewController.swift in Sources */,
+				B5D712022427DC4D0017E164 /* Artwork.swift in Sources */,
 				B5A88209240DA75E00703C82 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

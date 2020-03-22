@@ -188,8 +188,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mKR-M3-u4Y">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mKR-M3-u4Y">
                                 <rect key="frame" x="0.0" y="1" width="375" height="665"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="delegate" destination="fF3-JE-DQh" id="Zvp-MS-sj5"/>
+                                    <outletCollection property="gestureRecognizers" destination="fqF-VS-bsa" appends="YES" id="xtv-Ie-BbN"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -204,10 +209,16 @@
                     <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="r8z-Ja-V1T"/>
                     <navigationItem key="navigationItem" id="jhN-CK-Ru0"/>
                     <connections>
+                        <outlet property="longPress" destination="fqF-VS-bsa" id="Kzp-Gp-GyX"/>
                         <outlet property="mapView" destination="mKR-M3-u4Y" id="44k-Vf-Y6t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sl8-hK-ORW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="fqF-VS-bsa">
+                    <connections>
+                        <action selector="longDetected:" destination="fF3-JE-DQh" id="ep2-A5-LIN"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="549.60000000000002" y="899.10044977511257"/>
         </scene>
