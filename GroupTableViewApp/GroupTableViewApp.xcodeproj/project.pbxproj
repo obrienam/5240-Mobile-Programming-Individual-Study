@@ -304,7 +304,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mobileStudy.GroupTableViewApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GroupTableViewApp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -322,7 +322,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mobileStudy.GroupTableViewApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GroupTableViewApp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

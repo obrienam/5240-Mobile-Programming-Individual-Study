@@ -38,7 +38,6 @@ class MapViewController: UIViewController{
     
     @IBAction func longDetected(_ sender: UILongPressGestureRecognizer) {
         
-        if longPress.state == .began {
         
         let position = mapView.convert(sender.location(in: nil),toCoordinateFrom: mapView)
         let center = CLLocation(latitude: position.latitude, longitude: position.longitude)
@@ -68,7 +67,7 @@ class MapViewController: UIViewController{
         
             
          
-        }
+        
         
         
     }
