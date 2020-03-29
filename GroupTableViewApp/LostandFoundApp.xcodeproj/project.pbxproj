@@ -20,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		B5064D652426A75F0063F001 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		B51F75BF2402FEA2005B3DF6 /* GroupTableViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupTableViewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51F75BF2402FEA2005B3DF6 /* LostandFoundApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostandFoundApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51F75C22402FEA2005B3DF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B51F75C42402FEA2005B3DF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B51F75C62402FEA2005B3DF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		B51F75B62402FEA2005B3DF6 = {
 			isa = PBXGroup;
 			children = (
-				B51F75C12402FEA2005B3DF6 /* GroupTableViewApp */,
+				B51F75C12402FEA2005B3DF6 /* LostandFoundApp */,
 				B51F75C02402FEA2005B3DF6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 		B51F75C02402FEA2005B3DF6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B51F75BF2402FEA2005B3DF6 /* GroupTableViewApp.app */,
+				B51F75BF2402FEA2005B3DF6 /* LostandFoundApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B51F75C12402FEA2005B3DF6 /* GroupTableViewApp */ = {
+		B51F75C12402FEA2005B3DF6 /* LostandFoundApp */ = {
 			isa = PBXGroup;
 			children = (
 				B51F75C22402FEA2005B3DF6 /* AppDelegate.swift */,
@@ -73,15 +73,15 @@
 				B51F75CD2402FEA5005B3DF6 /* LaunchScreen.storyboard */,
 				B51F75D02402FEA5005B3DF6 /* Info.plist */,
 			);
-			path = GroupTableViewApp;
+			path = LostandFoundApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B51F75BE2402FEA2005B3DF6 /* GroupTableViewApp */ = {
+		B51F75BE2402FEA2005B3DF6 /* LostandFoundApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B51F75D32402FEA5005B3DF6 /* Build configuration list for PBXNativeTarget "GroupTableViewApp" */;
+			buildConfigurationList = B51F75D32402FEA5005B3DF6 /* Build configuration list for PBXNativeTarget "LostandFoundApp" */;
 			buildPhases = (
 				B51F75BB2402FEA2005B3DF6 /* Sources */,
 				B51F75BC2402FEA2005B3DF6 /* Frameworks */,
@@ -91,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = GroupTableViewApp;
+			name = LostandFoundApp;
 			productName = GroupTableViewApp;
-			productReference = B51F75BF2402FEA2005B3DF6 /* GroupTableViewApp.app */;
+			productReference = B51F75BF2402FEA2005B3DF6 /* LostandFoundApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B51F75BA2402FEA2005B3DF6 /* Build configuration list for PBXProject "GroupTableViewApp" */;
+			buildConfigurationList = B51F75BA2402FEA2005B3DF6 /* Build configuration list for PBXProject "LostandFoundApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -124,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B51F75BE2402FEA2005B3DF6 /* GroupTableViewApp */,
+				B51F75BE2402FEA2005B3DF6 /* LostandFoundApp */,
 			);
 		};
 /* End PBXProject section */
@@ -304,7 +304,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mobileStudy.GroupTableViewApp;
-				PRODUCT_NAME = GroupTableViewApp;
+				PRODUCT_NAME = LostandFoundApp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -322,7 +322,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mobileStudy.GroupTableViewApp;
-				PRODUCT_NAME = GroupTableViewApp;
+				PRODUCT_NAME = LostandFoundApp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -331,7 +331,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B51F75BA2402FEA2005B3DF6 /* Build configuration list for PBXProject "GroupTableViewApp" */ = {
+		B51F75BA2402FEA2005B3DF6 /* Build configuration list for PBXProject "LostandFoundApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B51F75D12402FEA5005B3DF6 /* Debug */,
@@ -340,7 +340,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B51F75D32402FEA5005B3DF6 /* Build configuration list for PBXNativeTarget "GroupTableViewApp" */ = {
+		B51F75D32402FEA5005B3DF6 /* Build configuration list for PBXNativeTarget "LostandFoundApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B51F75D42402FEA5005B3DF6 /* Debug */,
